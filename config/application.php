@@ -55,10 +55,10 @@ Config::define('WP_CONTENT_URL', Config::get('WP_HOME') . Config::get('CONTENT_D
 /**
  * DB settings
  */
-Config::define('DB_NAME', env('DB_NAME'));
-Config::define('DB_USER', env('DB_USER'));
-Config::define('DB_PASSWORD', env('DB_PASSWORD'));
-Config::define('DB_HOST', env('DB_HOST') ?: 'localhost');
+Config::define('DB_NAME', env('$SCALINGO_MYSQL_URL'));
+Config::define('DB_USER', env('necstrasbou_5945'));
+Config::define('DB_PASSWORD', env('xxteRuIgmieQJoLZZvyf'));
+Config::define('DB_HOST', env('mysql://necstrasbou_5945:xxteRuIgmieQJoLZZvyf@80b6837a-3141-427c-bd5a-00596b6dbdd7.necstrasbou-5945.mysql.a.osc-fr1.scalingo-dbs.com:39303/necstrasbou_5945?useSSL=true&verifyServerCertificate=false') ?: '8080');
 Config::define('DB_CHARSET', 'utf8mb4');
 Config::define('DB_COLLATE', '');
 $table_prefix = env('DB_PREFIX') ?: 'wp_';
