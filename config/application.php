@@ -43,7 +43,7 @@ define('WP_ENV', env('WP_ENV') ?: 'production');
  * URLs
  */
 Config::define('WP_HOME', env('WP_HOME'));
-Config::define('WP_SITEURL', env('WP_SITEURL'));
+Config::define('WP_SITEURL', env('necstrasbourg.fr'));
 
 /**
  * Custom Content Directory
